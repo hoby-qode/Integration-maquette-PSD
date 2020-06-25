@@ -21,8 +21,9 @@ tr, th, td {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
   font-family: "raleway";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,13 +33,13 @@ body {
 
 * {
   font-family: inherit;
-  font-size: inherit;
   line-height: inherit;
 }
 
 a,
 a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 ol,
@@ -46,19 +47,80 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 1230px;
-  margin: auto;
+h1 {
+  font-size: 60px;
+  line-height: 1;
+  max-width: 704px;
+}
+h1 .header__banner--small {
+  font-size: 24px;
+}
+h1 .header__banner--big {
+  width: 80%;
+}
+h1 .text-gris {
+  color: #7b6c63;
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  .header__banner {
+    width: 100%;
+    height: 674px;
+    background: url("../../images/Layer_5.png") no-repeat;
+  }
+}
 .header__nav {
   width: 100%;
   height: 95px;
-  display: flex;
-  flex-wrap: wrap;
   background: #303030;
   color: #ffffff;
-  padding: 29px 0;
+}
+.header__nav .container {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.header__nav--logo {
+  margin-left: 30px;
+}
+.header__nav--logo a {
+  font-size: 47.64px;
+}
+.header__nav--row {
+  display: flex;
+  align-content: center;
+}
+.header__nav--link {
+  margin-left: auto;
+}
+.header__nav--item {
+  margin-left: 40px;
+}
+.header__nav--item:nth-last-child(1) {
+  margin-right: 30px !important;
 }
 
 /*# sourceMappingURL=app.css.map */
