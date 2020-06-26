@@ -77,7 +77,12 @@ h4 {
   font-size: 2.4rem;
   font-family: "raleway_medium";
   font-weight: 500;
+  line-height: 1;
   color: #7b6c63;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .btn {
@@ -126,6 +131,12 @@ h4 {
   margin-right: 30px !important;
 }
 
+.service__text {
+  max-width: 897px;
+  margin: auto;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -172,9 +183,9 @@ h4 {
   }
   .header__banner--btn .btn-download:hover {
     background: rgba(255, 255, 255, 0.9);
+    color: #000000;
     font-weight: bolder;
     transition: 1s;
-    color: #000000;
   }
   .header__banner .container {
     height: inherit;
@@ -248,6 +259,16 @@ h4 {
   }
   .best__image img {
     width: 100%;
+  }
+
+  .service__block {
+    display: flex;
+    margin: 93px auto 78px auto;
+  }
+  .service__block--item {
+    flex: 33.3%;
+    padding: 0 16px;
+    text-align: center;
   }
 }
 
