@@ -127,7 +127,19 @@ h4 {
 }
 .header__nav--item {
   margin-left: 40px;
+  position: relative;
   font-size: 1.2rem;
+}
+.header__nav--item a {
+  position: relative;
+}
+.header__nav--item a:hover::before {
+  content: "";
+  width: 41px;
+  height: 5px;
+  background: #7b6c63;
+  position: absolute;
+  margin-top: 25px;
 }
 .header__nav--item:nth-last-child(1) {
   margin-right: 30px !important;
@@ -136,6 +148,7 @@ h4 {
 .header__banner {
   width: 100%;
   position: relative;
+  height: 674px;
 }
 .header__banner--title, .header__banner--btn {
   flex: 100%;
