@@ -96,6 +96,12 @@ h4 {
   background-color: none;
   border: 2px solid #000000;
   border-radius: 3px;
+  transition: 1s;
+}
+.btn:hover {
+  background-color: black;
+  color: white !important;
+  transition: 1s;
 }
 
 /*
